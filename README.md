@@ -12,4 +12,11 @@ A Java networking project implementing TCP and UDP socket programming with clien
 
 Compile all files:
 ```bash
-javac -d . src/com/network/*.java src/com/network/tcp/echo/*.java src/com/network/tcp/broadcast/*.java src/com/network/udp/*.java
+javac -d out $(find src -name "*.java")
+
+``` 
+Run:
+```bash
+java -cp out com.network.Main
+
+```
